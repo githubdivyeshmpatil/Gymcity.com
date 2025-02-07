@@ -25,7 +25,7 @@ const StatsCounter = () => {
       <div className="flex flex-wrap justify-center space-x-6 sm:space-x-12 md:space-x-16 lg:space-x-24">
         {stats.map((stat, index) => (
           <div key={index} className="text-center flex-1 min-w-[150px] max-w-[250px]">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold">
               <CountUp 
                 key={trigger}  // Use the trigger as the key to reset the animation
                 start={0} 
@@ -34,7 +34,7 @@ const StatsCounter = () => {
                 delay={0} 
               />{stat.suffix}
             </h2>
-            <p className="text-xl sm:text-lg mt-4 font-rajdhani">{stat.label}</p>
+            <p className="text-md sm:text-lg mt-4 font-rajdhani">{stat.label}</p>
             </div>
         ))}
       </div>
