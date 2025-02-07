@@ -15,8 +15,8 @@ const Navbar = ({ cartItemCount, onCartClick, onEmailClick }) => {
   return (
     <div>
       {/* Desktop Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-40">
-        <div className="purple-header flex items-center justify-center">
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-40 overflow-x-hidden">
+      <div className="purple-header flex items-center justify-center">
           <marquee>   
             <p className="text-white">RAKHI SALE - GET 20% OFF ON WOMEN'S ETHNIC & CO-ORD SETS COLLECTION</p>
           </marquee>
