@@ -1,9 +1,13 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.rajdhani-font {
-    font-family: 'Rajdhani', sans-serif;
+@layer base {
+  body {
+    @apply overflow-x-hidden;
   }
+}
+
+.rajdhani-font {
+  font-family: 'Rajdhani', sans-serif;
+}
