@@ -11,6 +11,8 @@ import FeaturesSection from '../components/FeaturesSection';
 import FeatureS from '../components/FeatureS';
 import Text from '../components/Text';
 import Testimonials from '../components/Testimonials';
+import MembershipPlans from '../components/MembershipPlans';
+import HeroSection from '../components/HeroSection';
 
 function Home() {
   useEffect(() => {
@@ -112,6 +114,10 @@ function Home() {
   style={{ backgroundImage: 'url("img/Mask.png")' }}
 >
 <Testimonials/>
+<Text title="Membership Packages" />
+<MembershipPlans/>
+<Text title="Get Training Today" />
+<HeroSection/>
 </div>
 
     </>
