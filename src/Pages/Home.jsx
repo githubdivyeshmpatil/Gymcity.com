@@ -10,6 +10,7 @@ import StatsCounter from '../components/StatsCounter';
 import FeaturesSection from '../components/FeaturesSection';
 import FeatureS from '../components/FeatureS';
 import Text from '../components/Text';
+import Testimonials from '../components/Testimonials';
 
 function Home() {
   useEffect(() => {
@@ -85,7 +86,34 @@ function Home() {
         </div>
         
         <FeatureS />
-      </div>
+       
+       </div>
+       <div
+  className="relative w-full min-h-screen bg-fixed"
+  style={{
+    backgroundImage: 'url("/img/Hero.png")',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+ 
+  </div>
+</div>
+
+<div className="w-full p-6 md:p-10 text-center">
+
+</div>
+
+<Text title="WHAT CLIENT'S SAY" />
+<div
+  className="container-fluid bg-cover bg-center min-h-screen"
+  style={{ backgroundImage: 'url("img/Mask.png")' }}
+>
+<Testimonials/>
+</div>
+
     </>
   );
 }

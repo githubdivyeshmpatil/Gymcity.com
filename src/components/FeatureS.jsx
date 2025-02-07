@@ -55,7 +55,7 @@ const FeatureS = () => {
     <div className="container mx-auto px-4 py-8 relative">
       <Slider {...settings}>
         {items.map((item, index) => (
-          <div key={index} className="slider-box bg-white p-4 rounded-lg shadow-md text-center">
+          <div key={index} className="slider-box  p-4 rounded-lg  text-center">
             {/* Responsive Image */}
             <img 
               src={item.img} 
