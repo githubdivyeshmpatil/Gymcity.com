@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -43,29 +42,10 @@ const Slider = () => {
             className="w-full h-full object-cover"
           />
           {i === index && (
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="absolute inset-y-0 left-0 flex flex-col items-center justify-center text-[#FF3D00] text-5xl font-extrabold px-4 py-2 text-center"
-            >
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-                className="mb-4 text-6xl"
-              >
-                {slide.name}
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1, duration: 0.7, ease: "easeOut" }}
-                className="text-xl font-semibold"
-              >
-                {slide.description}
-              </motion.div>
-            </motion.div>
+            <div className="absolute inset-y-0 left-0 flex flex-col items-center justify-center text-[#FF3D00] text-5xl font-extrabold px-4 py-2 text-center">
+              <div className="mb-4 text-6xl">{slide.name}</div>
+              <div className="text-xl font-semibold">{slide.description}</div>
+            </div>
           )}
         </div>
       ))}
