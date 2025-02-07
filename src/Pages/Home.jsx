@@ -14,6 +14,7 @@ import Testimonials from '../components/Testimonials';
 import MembershipPlans from '../components/MembershipPlans';
 import HeroSection from '../components/HeroSection';
 
+
 function Home() {
   useEffect(() => {
     AOS.init({
@@ -115,10 +116,11 @@ function Home() {
 >
 <Testimonials/>
 <Text title="Membership Packages" />
-<MembershipPlans/>
+<MembershipPlans/><br></br>
 <Text title="Get Training Today" />
 <HeroSection/>
 </div>
+
 
     </>
   );

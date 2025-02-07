@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import Services from './Services';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from './components/Footer';
 
 
 
@@ -26,7 +27,7 @@ function App() {
       
       
      </Routes>
-    
+    <Footer/>
    </Router>
   )
 }
