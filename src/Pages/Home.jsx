@@ -13,6 +13,7 @@ import Text from '../components/Text';
 import Testimonials from '../components/Testimonials';
 import MembershipPlans from '../components/MembershipPlans';
 import HeroSection from '../components/HeroSection';
+import WhatsAppPopup from '../Animation/WhatsAppPopup';
 
 
 function Home() {
@@ -36,7 +37,7 @@ function Home() {
       
       <StatsCounter />
 
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-10 ">
         <Text title="FIND WHAT MOVES YOU" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Gym Section */}
@@ -55,7 +56,7 @@ function Home() {
           {/* Zumba Section */}
           <div className="p-4" data-aos="fade-up">
             <img
-              src="img/2.png"
+              src="img/12.jpg"
               alt="Zumba"
               className="h-[250px] md:h-[320px] w-full object-cover rounded-tl-[50px] md:rounded-tl-[80px]"
             />
@@ -68,7 +69,7 @@ function Home() {
           {/* Yoga Section */}
           <div className="p-4" data-aos="fade-up">
             <img
-              src="img/3.png"
+              src="img/13.jpg"
               alt="Yoga"
               className="h-[250px] md:h-[320px] w-full object-cover rounded-tl-[50px] md:rounded-tl-[80px]"
             />
@@ -78,12 +79,14 @@ function Home() {
             </p>
           </div>
         </div>
-
+          <div className='mt-10'>
         <Text title="WHY CHOOSE US" />
         <FeaturesSection />
+        </div>
+        <div className=' mt-16'>
         <Text title="Transform Your Body" />
-        
-        <div className="flex items-center w-full">
+        </div>
+        <div className="flex items-center w-full mt-6">
           <p className="text-xl md:text-3xl font-semibold whitespace-nowrap rajdhani-font">FEATURED CLASSES</p>
           <div className="flex-1 h-[2px] bg-gray-500 ml-4"></div>
         </div>
@@ -115,11 +118,40 @@ function Home() {
   style={{ backgroundImage: 'url("img/Mask.png")' }}
 >
 <Testimonials/>
+ <div className='mt-16'>
 <Text title="Membership Packages" />
 <MembershipPlans/><br></br>
+</div>
+<div className='mt-16'>
 <Text title="Get Training Today" />
 <HeroSection/>
 </div>
+</div><div className="relative w-full h-72 overflow-hidden mt-56 sm:mt-40 md:mt-32 lg:mt-24 rajdhani-font">
+  {/* White Strip (Diagonal) */}
+  <div className="absolute w-[120%] -rotate-6 left-[-10%] top-10 sm:top-14 bg-white border-t-4 border-b-4 border-orange-500 shadow-lg">
+    <marquee
+      behavior="scroll"
+      direction="left"
+      className="text-lg sm:text-2xl font-bold text-black py-2 sm:py-3 whitespace-nowrap"
+    >
+      ⭐ weightlifting ⭐ POWERLIFTING ⭐ Squat ⭐ Deadlift ⭐ Bench Press ⭐
+      Overhead Press ⭐ Pull-ups ⭐ Rows ⭐ Hypertrophy Training ⭐ Olympic Weightlifting ⭐ Bodyweight Training ⭐ Cardio Exercises
+    </marquee>
+  </div>
+
+  {/* Black Strip (Diagonal) */}
+  <div className="absolute w-[120%] rotate-6 left-[-10%] top-20 sm:top-28 bg-[#343434] border-t-4 border-b-4 border-[#343434] shadow-lg">
+    <marquee
+      behavior="scroll"
+      direction="right"
+      className="text-lg sm:text-2xl font-bold text-white py-2 sm:py-3 whitespace-nowrap"
+    >
+      ⭐ weightlifting ⭐ POWERLIFTING ⭐ Squat ⭐ Deadlift ⭐ Bench Press ⭐
+      Overhead Press ⭐ Pull-ups ⭐ Rows ⭐ Hypertrophy Training ⭐ Olympic Weightlifting ⭐ Bodyweight Training ⭐ Cardio Exercises
+    </marquee>
+  </div>
+</div>
+<WhatsAppPopup/>
 
 
     </>

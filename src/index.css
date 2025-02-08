@@ -11,3 +11,6 @@
 .rajdhani-font {
   font-family: 'Rajdhani', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+}
