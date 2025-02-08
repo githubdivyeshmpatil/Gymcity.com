@@ -1,4 +1,7 @@
+
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,25 +25,25 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex justify-between items-center rajdhani-font">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-white">GYM</h1>
+        <img src="img/logo.png" alt="Gym City Logo" className="h-10 w-auto" />
 
         {/* Centered Navigation */}
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 text-xl gap-6">
-          <a href="#home" className="hover:text-yellow-400 text-white">
+          <Link to="/" className="hover:text-yellow-400 text-white">
             Home
-          </a>
-          <a href="#about" className="hover:text-yellow-400 text-white">
+          </Link>
+          <Link to="/about-us" className="hover:text-yellow-400 text-white">
             About
-          </a>
-          <a href="#blog" className="hover:text-yellow-400 text-white">
-            Blog
-          </a>
-          <a href="#shop" className="hover:text-yellow-400 text-white">
+          </Link>
+          <Link to="/Services" className="hover:text-yellow-400 text-white">
+            Services
+          </Link>
+          <Link to="/shop" className="hover:text-yellow-400 text-white">
             Shop
-          </a>
-          <a href="#contact" className="hover:text-yellow-400 text-white">
+          </Link>
+          <Link to="/contact" className="hover:text-yellow-400 text-white">
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Social Icons */}
@@ -60,7 +63,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden ml-40" onClick={() => setIsOpen(!isOpen)}>
           <svg
             className="w-8 h-8 text-white"
             xmlns="http://www.w3.org/2000/svg"
@@ -84,11 +87,14 @@ export default function Navbar() {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
-        <div className="flex justify-between items-center">
-          <h2 className="text-xl font-bold text-white">MENU</h2>
+       <div className="flex justify-between items-center">
+  {/* Logo Image */}
+  <img src="img/logo.png" alt="Gym City Logo" className="h-10 w-auto" />
+
+
           <button onClick={() => setIsOpen(false)}>
             <svg
-              className="w-8 h-8 text-white"
+              className="w-8 h-8 text-white ml-28"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
@@ -103,41 +109,41 @@ export default function Navbar() {
           </button>
         </div>
         <nav className="mt-6 flex flex-col gap-4">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="hover:text-yellow-400 text-white"
             onClick={() => setIsOpen(false)}
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/about-us"
             className="hover:text-yellow-400 text-white"
             onClick={() => setIsOpen(false)}
           >
             About
-          </a>
-          <a
-            href="#blog"
+          </Link>
+          <Link
+            href="/services"
             className="hover:text-yellow-400 text-white"
             onClick={() => setIsOpen(false)}
           >
-            Blog
-          </a>
-          <a
-            href="#shop"
+            Services
+          </Link>
+          <Link
+            to="/shop"
             className="hover:text-yellow-400 text-white"
             onClick={() => setIsOpen(false)}
           >
             Shop
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="hover:text-yellow-400 text-white"
             onClick={() => setIsOpen(false)}
           >
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
