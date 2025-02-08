@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import BackgroundWrapper from "../Animation/BackgroundWrapper";
+
 import TestimonialSlider from "../components/Testimonials";
 
 function About() {
@@ -16,7 +16,7 @@ function About() {
  
 </BackgroundWrapper>
 <TestimonialSlider/>
-iiiii
+iiiiiff
     </div>
   );
 }
